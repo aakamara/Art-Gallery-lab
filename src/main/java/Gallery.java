@@ -13,6 +13,19 @@ public class Gallery {
         this.till = 0;
     }
 
+    //Method
+    public void sellArtwork(Customer customer, Artwork artwork){
+        if(customer.canBuy(artwork) == true){
+            customer.buyArtwork(artwork);
+            this.artworks.remove(artwork);
+            setTill(this.till + artwork.getPrice());
+        }
+    }
+
+
+
+    public double calculateArtworkValue
+
     public int artworkCount(){
         return this.artworks.size();
     }
