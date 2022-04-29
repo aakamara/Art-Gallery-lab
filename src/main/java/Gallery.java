@@ -22,9 +22,13 @@ public class Gallery {
         }
     }
 
-
-
-    public double calculateArtworkValue
+    public double calculateArtworkValue(){
+        double total = 0;
+        for(Artwork artwork : this.artworks){
+            total += artwork.getPrice();
+        }
+        return total;
+    }
 
     public int artworkCount(){
         return this.artworks.size();
