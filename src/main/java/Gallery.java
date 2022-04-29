@@ -11,4 +11,29 @@ public class Gallery {
         this.artworks = new ArrayList<>();
         this.till = 0;
     }
+
+    //Getters & Setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getTill() {
+        return till;
+    }
+
+    public void setTill(double till) {
+        this.till = till;
+    }
+
+    public ArrayList<Artwork> getArtworks() {
+        return artworks;
+    }
+
+    public void setArtworks(ArrayList<Artwork> artworks) {
+        this.artworks = artworks;
+    }
 }
