@@ -13,6 +13,14 @@ public class Gallery {
         this.till = 0;
     }
 
+    public int artworkCount(){
+        return this.artworks.size();
+    }
+
+    public void addArtwork(Artwork artwork){
+        this.artworks.add(artwork);
+    }
+
     //Getters & Setters
     public String getName() {
         return name;
