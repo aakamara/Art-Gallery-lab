@@ -13,6 +13,18 @@ public class Customer {
         this.customerArtwork = new ArrayList<>();
     }
 
+    public boolean canBuy(Artwork){
+        if(artwork.getPrice() <= this.wallet){
+            return true;
+        }
+        return false;
+    }
+
+    public void buyArtwork(Artwork artwork){
+        this.wallet -= artwork.getPrice();
+        this.customerArtwork.add(artwork);
+    }
+
     // Getters & Setters -- command + N --
     public String getName() {
         return name;
