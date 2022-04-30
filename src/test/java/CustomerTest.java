@@ -22,16 +22,16 @@ public class CustomerTest {
         assertThat(customer.canBuy(sunflowers)).isEqualTo(true);
     }
 
-    @Test
+   /* @Test
     public void customerArtworkCountStartsEmpty(){
         assertThat(customer.getArtworkCount()).isEqualTo(0);
-    }
+    } */
 
     @Test
     public void canBuyArtwork(){
         customer.buyArtwork(sunflowers);
         assertThat(customer.getWallet()).isEqualTo(1000);
-        assertThat(customer.getArtworkCount()).isEqualTo(1);
+        //assertThat(customer.getArtworkCount()).isEqualTo(1);
     }
 
     @Test

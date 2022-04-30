@@ -7,7 +7,7 @@ public class Gallery {
     private ArrayList<Artwork> artworks;
 
     //Constructor
-    public Gallery(String name, double till) {
+    public Gallery(String name) {
         this.name = name;
         this.artworks = new ArrayList<>();
         this.till = 0;
